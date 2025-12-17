@@ -11,50 +11,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
-    <script type="application/ld+json">
-      [
-        {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "CEPATO",
-          "url": "https://chongxi.us",
-          "about": "Chongxi's Homepage"
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Chongxi",
-          "url": "https://chongxi.us",
-          "image": "/images/xi.webp",
-          "description": "Chongxi's blog",
-          "sameAs": [
-            "https://blog.chongxi.us",
-            "https://github.com/ChongxiSama",
-            "https://t.me/CEPATECH",
-            "mailto:qwq@chongxi.us",
-            "https://orcid.org/0009-0007-9348-1534",
-            "https://m.bilibili.com/space/500042199"
-          ]
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "CEPATO",
-          "url": "https://blog.chongxi.us",
-          "logo": "/images/szm.svg",
-          "sameAs": [
-            "https://blog.chongxi.us",
-            "https://github.com/ChongxiSama",
-            "https://t.me/CEPATECH",
-            "mailto:qwq@chongxi.us",
-            "https://orcid.org/0009-0007-9348-1534",
-            "https://m.bilibili.com/space/500042199"
-          ]
-        }
-      ]
-    </script>
 
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://chongxi.us/#person", 
+      "name": "Chongxi",
+      "alternateName": "Chongxi3555",
+      "url": "https://chongxi.us",
+      "image": "https://blog.chongxi.us/images/xi.webp",
+      "description": "Full Stack Developer, Web3 Researcher & Tech Blogger",
+      "jobTitle": "Founder",
+      "sameAs": [
+        "https://github.com/ChongxiSama",
+        "https://t.me/CEPATECH",
+        "https://orcid.org/0009-0007-9348-1534",
+        "https://m.bilibili.com/space/500042199"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://chongxi.us/#organization",
+      "name": "CEPATO",
+      "url": "https://chongxi.us",
+      "logo": "https://blog.chongxi.us/images/szm.svg",
+      "founder": { "@id": "https://chongxi.us/#person" }, 
+      "sameAs": ["https://github.com/ChongxiSama"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://chongxi.us/#website",
+      "url": "https://chongxi.us",
+      "name": "CEPATO Homepage",
+      "publisher": { "@id": "https://chongxi.us/#organization" },
+      "about": { "@id": "https://chongxi.us/#person" }
+    }
+  ]
+}
+    </script>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
